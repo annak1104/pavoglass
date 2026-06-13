@@ -74,7 +74,7 @@ export default function GlassNavbar() {
 
       <div
         className={cn(
-          "mx-auto mt-2 grid max-w-6xl overflow-hidden rounded-[28px] px-4 transition-all duration-300 lg:hidden",
+          "glass-surface mx-auto mt-2 grid max-w-6xl overflow-hidden rounded-[28px] px-4 transition-all duration-300 lg:hidden",
           open ? "max-h-80 py-4 opacity-100" : "max-h-0 py-0 opacity-0",
         )}
       >

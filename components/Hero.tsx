@@ -19,7 +19,6 @@ export default function Hero() {
     <section className="relative min-h-screen overflow-hidden pb-14 pt-28 md:pt-32">
       <div className="absolute inset-0">
         <div className="absolute left-[58%] top-[72%] size-1 rounded-full bg-foreground/70" />
-        <div className="liquid-line absolute left-0 top-36 h-px w-full opacity-40" />
         <div className="absolute bottom-0 left-1/2 h-64 w-[130%] -translate-x-1/2 bg-accent/10 blur-3xl" />
       </div>
       <div className="section-shell relative grid min-h-[calc(100vh-112px)] items-center gap-12 lg:grid-cols-[1fr_0.92fr]">
@@ -33,7 +32,7 @@ export default function Hero() {
             Автоскло, встановлення, ремонт та тонування
           </div>
           <h1 className="text-balance max-w-4xl text-4xl font-semibold leading-tight tracking-tight text-foreground md:text-6xl lg:text-7xl">
-            Професійна заміна та ремонт автомобільного скла у Луцьку
+            Pavoglass - професійна заміна та ремонт автомобільного скла у Луцьку
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
             Продаж, встановлення та ремонт автоскла для будь-яких автомобілів. Швидко, якісно та з гарантією.
@@ -55,7 +54,7 @@ export default function Hero() {
             ))}
           </div>
         </motion.div>
-        <motion.div style={{ y: imageY }} className="relative hidden lg:block">
+        <motion.div style={{ y: imageY }} className="relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-glass">
             <Image
               src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=82"

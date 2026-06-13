@@ -2,14 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Laptop, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 const options = [
   { value: "light", label: "Light", icon: Sun },
   { value: "dark", label: "Dark", icon: Moon },
-  { value: "system", label: "System", icon: Laptop },
 ];
 
 export default function ThemeSwitcher() {
