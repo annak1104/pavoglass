@@ -33,7 +33,9 @@ export default function Navbar() {
             />
           </span>
 
-     
+          <span className="text-lg font-bold tracking-tight text-pearl">
+            PavoGla11ss
+          </span>
         </a>
         <div className="hidden items-center gap-7 lg:flex">
           {links.map((link) => (

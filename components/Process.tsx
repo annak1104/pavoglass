@@ -17,8 +17,8 @@ export default function Process() {
         <div className="liquid-line absolute left-0 right-0 top-8 hidden h-px md:block" />
         {steps.map((step, index) => (
           <MotionReveal delay={index * 0.08} key={step.title}>
-            <article className="glass-surface relative rounded-[28px] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-glass">
-              <div className="glass-surface mb-6 flex size-16 items-center justify-center rounded-full text-2xl font-bold text-foreground">
+            <article className="glass-surface after:content-none relative rounded-[28px] p-6 transition duration-300 hover:-translate-y-1 hover:shadow-glass">
+              <div className="glass-surface after:content-none mb-6 flex size-16 items-center justify-center rounded-full text-2xl font-bold text-foreground">
                 {index + 1}
               </div>
               <h3 className="text-xl font-semibold text-foreground">{step.title}</h3>

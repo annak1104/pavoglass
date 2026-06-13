@@ -39,8 +39,8 @@ export default function Home() {
           </p>
           <div className="mt-10 grid gap-4">
             {contactItems.map((item) => (
-              <div className="glass-surface flex items-center gap-4 rounded-[26px] p-5" key={item.label}>
-                <div className="glass-surface flex size-11 shrink-0 items-center justify-center rounded-full text-primary">
+              <div className="glass-surface after:content-none flex items-center gap-4 rounded-[26px] p-5" key={item.label}>
+                <div className="glass-surface after:content-none flex size-11 shrink-0 items-center justify-center rounded-full text-primary">
                   <item.icon className="size-5" />
                 </div>
                 <div>

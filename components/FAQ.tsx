@@ -25,7 +25,7 @@ export default function FAQ() {
   return (
     <Section>
       <SectionHeader eyebrow="FAQ" title="Відповіді на часті запитання" />
-      <div className="glass-surface mx-auto max-w-3xl rounded-[30px] px-6">
+      <div className="glass-surface after:content-none mx-auto max-w-3xl rounded-[30px] px-6">
         <Accordion type="single" collapsible>
           {faq.map((item, index) => (
             <AccordionItem value={`item-${index}`} key={item.question}>

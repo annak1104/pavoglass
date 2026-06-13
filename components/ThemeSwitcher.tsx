@@ -23,7 +23,7 @@ export default function ThemeSwitcher() {
   }
 
   return (
-    <div className="glass-surface flex h-11 items-center rounded-full p-1" role="radiogroup" aria-label="Theme">
+    <div className="glass-surface after:content-none flex h-11 items-center rounded-full p-1" role="radiogroup" aria-label="Theme">
       {options.map((option) => {
         const Icon = option.icon;
         const active = theme === option.value;

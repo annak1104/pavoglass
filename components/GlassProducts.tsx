@@ -21,7 +21,7 @@ export default function GlassProducts() {
             <GlassCard icon={ScanSearch} title="Категорії скла" className="h-full">
               <div className="grid gap-3 sm:grid-cols-2">
                 {categories.map((item) => (
-                  <div className="glass-surface rounded-full px-4 py-4 font-semibold text-foreground" key={item}>
+                  <div className="glass-surface  after:content-none rounded-full px-4 py-4 font-semibold text-foreground" key={item}>
                     {item}
                   </div>
                 ))}

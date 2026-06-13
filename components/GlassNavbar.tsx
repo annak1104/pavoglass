@@ -5,6 +5,7 @@ import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { cn } from "@/lib/utils";
 import { Menu, Sparkles, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "#services", label: "Послуги" },
@@ -19,12 +20,24 @@ export default function GlassNavbar() {
 
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
-      <nav className="glass-surface mx-auto flex max-w-6xl items-center justify-between rounded-full px-3 py-2" aria-label="Головна навігація">
-        <a href="#" className="flex min-w-0 items-center gap-2 rounded-full px-2 text-foreground" aria-label="PavoGlass">
-          <span className="glass-surface grid size-10 place-items-center rounded-full">
-            <Sparkles className="size-5 text-primary" />
+      <nav
+        className="glass-surface after:content-none mx-auto flex max-w-6xl items-center justify-between rounded-full px-3 py-2"
+        aria-label="Головна навігація"
+      >
+        <a
+          href="#"
+          className="flex min-w-0 items-center gap-2 rounded-full px-2 text-foreground"
+          aria-label="PavoGlass"
+        >
+          <span className="relative flex size-16 items-center justify-center">
+            <Image
+              src="/favicon.png"
+              alt="PavoGlass logo"
+              fill
+              className="object-contain p-1"
+              priority
+            />
           </span>
-          <span className="truncate text-base font-bold tracking-tight">PavoGlass</span>
         </a>
 
         <div className="hidden items-center gap-1 lg:flex">
@@ -50,7 +63,7 @@ export default function GlassNavbar() {
           <ThemeSwitcher />
           <button
             type="button"
-            className="glass-surface grid size-11 place-items-center rounded-full text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            className="grid size-11 place-items-center rounded-full text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
             onClick={() => setOpen((value) => !value)}
             aria-label={open ? "Закрити меню" : "Відкрити меню"}
           >
@@ -61,7 +74,7 @@ export default function GlassNavbar() {
 
       <div
         className={cn(
-          "glass-surface mx-auto mt-2 grid max-w-6xl overflow-hidden rounded-[28px] px-4 transition-all duration-300 lg:hidden",
+          "mx-auto mt-2 grid max-w-6xl overflow-hidden rounded-[28px] px-4 transition-all duration-300 lg:hidden",
           open ? "max-h-80 py-4 opacity-100" : "max-h-0 py-0 opacity-0",
         )}
       >
