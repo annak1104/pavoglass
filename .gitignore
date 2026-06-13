@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+
+# next
+.next
+
+# env
+.env
+.env.local
+.nvmrc
+
+# misc
+.DS_Store
+# clerk configuration (can include secrets)
+/.clerk/
